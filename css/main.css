@@ -1,0 +1,124 @@
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+body {
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Montserrat, sans-serif;
+}
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.nav-list {
+    display: flex;
+}
+.nav-list li a {
+    margin-left: 40px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+
+    align-items: center;
+}
+.main-box {
+    display: flex;
+}
+.info-box {
+    width: 60%;
+}
+.info-title-small {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.info-title-big {
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.info-detalis {
+    display: flex;
+    margin:60px 0;
+}
+.detail {
+    font-weight: 600;
+    position: relative;
+    margin-right: 20px;
+}
+.detail1::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c2";
+    font-weight: bold;
+    color: var(--accent-color);
+    position: absolute;
+    top: -30px;
+    font-size: 1.5rem;
+}
+.detail2::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3d1";
+    font-weight: bold;
+    color: var(--accent-color);
+    position: absolute;
+    top: -30px;
+    font-size: 1.5rem;
+}
+.detail3::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f2f2";
+    font-weight: bold;
+    color: var(--accent-color);
+    position: absolute;
+    top: -30px;
+    font-size: 1.5rem;
+}
+.contact-form {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 6px;
+}
+.contact-form .header-logo {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+}
+.calculate-input {
+    margin: 12px 0;
+    border: none;
+    border-bottom: solid lightgray 2px;
+}
+.button {
+    background-color: var(--accent-color);
+    padding: 20px 30px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    color:white;
+    width: 200px;
+}
